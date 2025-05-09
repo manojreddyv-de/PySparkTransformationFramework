@@ -1,0 +1,31 @@
+{
+  "transformations": [
+    {
+      "operation": "select",
+      "params": {
+        "columns": ["name", "age", "salary"]
+      }
+    },
+    {
+      "operation": "filter",
+      "params": {
+        "condition": "age > 30"
+      }
+    },
+    {
+      "operation": "withColumn",
+      "params": {
+        "name": "salary_with_bonus",
+        "expression": "salary * 1.2"
+      }
+    }
+  ],
+  "actions": [
+    {
+      "type": "show",
+      "params": {
+        "numRows": 10
+      }
+    }
+  ]
+}
