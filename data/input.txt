@@ -1,0 +1,3 @@
+{"name": "Alice", "age": 34, "salary": 5000}
+{"name": "Bob", "age": 29, "salary": 4500}
+{"name": "Charlie", "age": 41, "salary": 7000}
