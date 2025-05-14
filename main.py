@@ -19,10 +19,8 @@ def apply_pipeline(df, config):
 if __name__ == "__main__":
     spark = SparkSession.builder.appName("DynamicTransformer").getOrCreate()
     
-    # Replace this with actual input
     df = spark.read.json("data/input.json")
 
-    # Example config from JSON
     with open("config/pipeline_config.json") as f:
         config = json.load(f)
 
